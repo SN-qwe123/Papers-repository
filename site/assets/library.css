@@ -1,0 +1,12 @@
+.md-grid { max-width: 85rem; }
+.md-typeset h1 { font-weight: 650; color: #24544d; }
+.filters { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem; margin: 1.5rem 0; }
+.filters input, .filters select, .filters button { padding: .5rem .7rem; border: 1px solid #b5c9c2; border-radius: .25rem; background: white; color: #24443b; font: inherit; }
+.filters input { min-width: 16rem; }
+.filters button { cursor: pointer; }
+.filters :focus-visible { outline: 2px solid teal; outline-offset: 2px; }
+.md-typeset #library table { width: 100%; display: table; }
+#library th:first-child { width: 55%; }
+.tag { display: inline-block; padding: .12rem .5rem; margin: .15rem .35rem .15rem 0; border-radius: .25rem; background: #edf3ef; color: #365e50; font-size: .7rem; }
+[hidden] { display: none !important; }
+#results { color: #63766e; font-size: .7rem; }

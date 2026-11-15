@@ -1,0 +1,22 @@
+site_name: Paper Library
+site_description: Paper summaries, notes, and original sources
+use_directory_urls: false
+theme:
+  name: material
+  language: en
+  font: false
+  palette:
+    primary: teal
+plugins:
+  - search:
+      lang: [en, zh]
+hooks:
+  - hooks/library.py
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.superfences
+extra_css:
+  - assets/library.css
+extra_javascript:
+  - assets/library.js
