@@ -1,12 +1,12 @@
 /* Minimal desktop library */
 .md-grid { max-width: 85rem; }
 .md-typeset h1 { font-weight: 650; color: #203f37; letter-spacing: -.035em; }
-body:has(#library) { background: #fafbf9; }
-body:has(#library) .md-header,
-body:has(#library) .md-tabs { display: none; }
-body:has(#library) .md-main__inner { margin-top: 2.8rem; }
+body { background: #fafbf9; }
+.md-header,
+.md-tabs { display: none; }
+.md-main__inner { margin-top: 2.8rem; }
 body:has(#library) .md-content { max-width: 60rem; margin-inline: auto; width: 100%; }
-body:has(#library) .md-content__inner { margin-inline: 1.2rem; }
+.md-content__inner { margin-inline: 1.2rem; }
 body:has(#library) .md-typeset > p { color: #728078; }
 #library .filters { display: grid; grid-template-columns: minmax(15rem, 1fr) minmax(10rem, 15rem) auto; gap: .8rem; align-items: end; margin: 2rem 0 1.3rem; }
 #library .filter-field { display: flex; flex-direction: column; gap: .4rem; min-width: 0; }
@@ -35,3 +35,6 @@ body:has(#library) .md-typeset > p { color: #728078; }
 [hidden] { display: none !important; }
 #results, #empty { color: #758379; font-size: .7rem; }
 @media (max-width: 650px) { #library .filters { grid-template-columns: 1fr; } }
+
+/* Hide the duplicate navigation heading, keeping all navigation links. */
+.md-nav--primary > .md-nav__title { display: none; }
