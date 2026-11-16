@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2026 JustinN (SN-qwe123).
+ * Original repository: https://github.com/SN-qwe123/Papers-repository
+ * See NOTICE.md for provenance and third-party attribution.
+ */
+
 (() => {
   const root = document.querySelector('#library');
   if (!root) return;

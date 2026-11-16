@@ -7,6 +7,8 @@ tags:
   - ML
 ---
 
+<!-- Paper-note template by JustinN | Source: https://github.com/SN-qwe123/Papers-repository -->
+
 [← Back to library](../index.md)
 
 # Paper title
