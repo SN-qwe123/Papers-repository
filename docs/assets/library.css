@@ -42,5 +42,60 @@ body:has(#library) .md-typeset > p { color: #728078; }
 #results, #empty { color: #758379; font-size: .7rem; }
 @media (max-width: 650px) { #library .filters { grid-template-columns: 1fr; } }
 
-/* Hide the duplicate navigation heading, keeping all navigation links. */
-.md-nav--primary > .md-nav__title { display: none; }
+/* Use only the current page outline in the left sidebar. */
+.md-sidebar--primary { display: none; }
+.md-sidebar--secondary {
+  order: -1;
+  width: 13.5rem;
+  flex-shrink: 0;
+}
+.md-sidebar--secondary .md-nav { font-size: .65rem; }
+.md-sidebar--secondary .md-nav__title {
+  color: #65766c;
+  font-weight: 600;
+  background: transparent;
+  box-shadow: none;
+  padding-bottom: .6rem;
+}
+.md-sidebar--secondary .md-nav__link {
+  padding: .35rem .55rem;
+  margin: .15rem 0;
+  border-radius: .3rem;
+  line-height: 1.55;
+  color: #53665b;
+}
+.md-sidebar--secondary .md-nav__link:hover {
+  color: #245f4c;
+  background: #edf3ee;
+}
+.md-sidebar--secondary .md-nav__link--active {
+  color: #245f4c;
+  background: #e7f0e9;
+  font-weight: 600;
+}
+.md-sidebar--secondary a:focus-visible {
+  outline: 2px solid #39846b;
+  outline-offset: 2px;
+}
+
+/* Vertically centered, viewport-fixed outline. */
+@media screen and (min-width: 60em) {
+  .md-sidebar--secondary {
+    position: static;
+    padding: 0;
+    transform: none !important;
+  }
+  .md-sidebar--secondary .md-sidebar__scrollwrap {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 13.1rem;
+    height: auto !important;
+    max-height: calc(100dvh - 3rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .md-sidebar--secondary .md-sidebar__inner {
+    padding-inline: .35rem;
+  }
+}

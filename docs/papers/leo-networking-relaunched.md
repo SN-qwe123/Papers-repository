@@ -22,13 +22,13 @@ tags:
 
 ## Original paper
 
-[Open supplied PDF](../pdfs/leo-networking-relaunched.pdf)
+[Open supplied PDF](../pdfs/leo-networking-relaunched.pdf){target="_blank" rel="noopener noreferrer"}
 
 > **Note provenance:** AI-assisted reading notes prepared from the supplied PDF. Reported results have not been independently reproduced. Research questions below are suggestions, not the author's conclusions or JustinN's personal judgments. Page links use the PDF viewer's page numbering.
 
 ## Summary
 
-This survey reviews LEO satellite networking as it evolves from ground-relayed bent-pipe communication toward multi-hop inter-satellite networks. It organizes routing research by mechanisms such as IP-based routing, load balancing, SDN, machine learning, disruption tolerance, geographic routing, and low-latency networking. It also reviews the 3GPP and IETF standardization landscape as understood in 2023. It is networking background for orbital computing, rather than a task-offloading algorithm. [Abstract and introduction](../pdfs/leo-networking-relaunched.pdf#page=1).
+This survey reviews LEO satellite networking as it evolves from ground-relayed bent-pipe communication toward multi-hop inter-satellite networks. It organizes routing research by mechanisms such as IP-based routing, load balancing, SDN, machine learning, disruption tolerance, geographic routing, and low-latency networking. It also reviews the 3GPP and IETF standardization landscape as understood in 2023. It is networking background for orbital computing, rather than a task-offloading algorithm. [Abstract and introduction](../pdfs/leo-networking-relaunched.pdf#page=1){target="_blank" rel="noopener noreferrer"}.
 
 ## Main themes
 
@@ -36,15 +36,15 @@ This survey reviews LEO satellite networking as it evolves from ground-relayed b
 - **Routing and control:** compare distributed routing with SDN-based control and learned policies; evaluate both forwarding efficiency and control overhead.
 - **Reliability:** address interruptions, congestion, failures, and heterogeneous demand rather than reasoning only about ideal propagation delay.
 - **Multi-layer integration:** combine LEO with other orbital layers and terrestrial/aerial infrastructure.
-- **Evaluation infrastructure:** review simulation and modeling approaches alongside algorithms. [Research taxonomy, Section 4](../pdfs/leo-networking-relaunched.pdf#page=5).
+- **Evaluation infrastructure:** review simulation and modeling approaches alongside algorithms. [Research taxonomy, Section 4](../pdfs/leo-networking-relaunched.pdf#page=5){target="_blank" rel="noopener noreferrer"}.
 
 ## Standardization perspective
 
-Section 5 surveys 3GPP non-terrestrial network work and IETF/IRTF discussions relevant to space networking, including time-varying routing and interoperability. It distinguishes the need for protocols and interfaces from individual operator implementations. This is a historical account of the paper's period, not a statement that all discussed proposals became standards. [Section 5](../pdfs/leo-networking-relaunched.pdf#page=13).
+Section 5 surveys 3GPP non-terrestrial network work and IETF/IRTF discussions relevant to space networking, including time-varying routing and interoperability. It distinguishes the need for protocols and interfaces from individual operator implementations. This is a historical account of the paper's period, not a statement that all discussed proposals became standards. [Section 5](../pdfs/leo-networking-relaunched.pdf#page=13){target="_blank" rel="noopener noreferrer"}.
 
 ## Findings and open problems
 
-The concluding research agenda emphasizes reliable connectivity, integration across layers, support for applications with strict requirements, and interoperability among independently operated constellations. The survey notes that low propagation distance alone does not establish consistently low end-to-end latency under real load. [Sections 6-7](../pdfs/leo-networking-relaunched.pdf#page=21).
+The concluding research agenda emphasizes reliable connectivity, integration across layers, support for applications with strict requirements, and interoperability among independently operated constellations. The survey notes that low propagation distance alone does not establish consistently low end-to-end latency under real load. [Sections 6-7](../pdfs/leo-networking-relaunched.pdf#page=21){target="_blank" rel="noopener noreferrer"}.
 
 ## Limitations
 

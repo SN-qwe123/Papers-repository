@@ -20,7 +20,7 @@ tags:
 ## Original paper
 
 <!-- Uncomment the links below and replace the example URLs. Remove any links you do not need. -->
-<!-- [Open PDF](../pdfs/your-paper.pdf) · [Paper website](https://example.org/paper) -->
+<!-- [Open PDF](../pdfs/your-paper.pdf){target="_blank" rel="noopener noreferrer"} · [Paper website](https://example.org/paper) -->
 
 The original paper has not been added yet.
 

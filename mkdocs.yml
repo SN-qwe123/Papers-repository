@@ -17,6 +17,7 @@ plugins:
 hooks:
   - hooks/library.py
 markdown_extensions:
+  - attr_list
   - tables
   - admonition
   - pymdownx.superfences

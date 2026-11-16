@@ -22,30 +22,30 @@ tags:
 
 ## Original paper
 
-[Open supplied PDF](../pdfs/survey-orbital-edge-computing.pdf) · [DOI / preprint record](https://doi.org/10.1016/j.cja.2024.11.026)
+[Open supplied PDF](../pdfs/survey-orbital-edge-computing.pdf){target="_blank" rel="noopener noreferrer"} · [DOI / preprint record](https://doi.org/10.1016/j.cja.2024.11.026)
 
 > **Note provenance:** AI-assisted reading notes prepared from the supplied PDF. Reported results have not been independently reproduced. Research questions below are suggestions, not the author's conclusions or JustinN's personal judgments. Page links use the PDF viewer's page numbering.
 
 ## Summary
 
-This survey maps orbital edge computing (OEC) across hardware, software, architectures, applications, optimization algorithms, and evaluation tools. Its central argument is that satellite mobility and tightly constrained energy, communication, storage, and compute resources make terrestrial edge-computing designs insufficient without adaptation. It connects systems research with task offloading, resource allocation, and satellite federated learning. Use it as a literature map and source of experimental design considerations, rather than as a new scheduling algorithm. [Source: abstract and introduction](../pdfs/survey-orbital-edge-computing.pdf#page=1).
+This survey maps orbital edge computing (OEC) across hardware, software, architectures, applications, optimization algorithms, and evaluation tools. Its central argument is that satellite mobility and tightly constrained energy, communication, storage, and compute resources make terrestrial edge-computing designs insufficient without adaptation. It connects systems research with task offloading, resource allocation, and satellite federated learning. Use it as a literature map and source of experimental design considerations, rather than as a new scheduling algorithm. [Source: abstract and introduction](../pdfs/survey-orbital-edge-computing.pdf#page=1){target="_blank" rel="noopener noreferrer"}.
 
 ## Research problem
 
-How should researchers organize a field whose system architectures, objectives, and simulation assumptions vary substantially? The review distinguishes orbital computing from terrestrial MEC in architecture, computing, control, mobility, and applications. It covers both data produced on the ground and data produced in space. [Sections 2-4](../pdfs/survey-orbital-edge-computing.pdf#page=6).
+How should researchers organize a field whose system architectures, objectives, and simulation assumptions vary substantially? The review distinguishes orbital computing from terrestrial MEC in architecture, computing, control, mobility, and applications. It covers both data produced on the ground and data produced in space. [Sections 2-4](../pdfs/survey-orbital-edge-computing.pdf#page=6){target="_blank" rel="noopener noreferrer"}.
 
 ## Main contributions and taxonomy
 
 - **Systems:** satellite hardware and software, plus cloud/edge/end roles.
 - **Applications:** Earth observation, scientific workloads, ground-origin services, and federated learning. FL is further organized around inter-satellite links and parameter-server placement.
 - **Algorithms:** convex optimization, game theory, heuristics, and deep learning, including reinforcement learning.
-- **Evaluation:** constellation configurations, performance metrics, network simulators, and testbeds. Examples discussed include STK, SNS3, Hypatia, SILLEO-SCNS, and StarPerf. These tools cover different parts of an OEC system; they are not interchangeable. [Sections 3-6](../pdfs/survey-orbital-edge-computing.pdf#page=9).
+- **Evaluation:** constellation configurations, performance metrics, network simulators, and testbeds. Examples discussed include STK, SNS3, Hypatia, SILLEO-SCNS, and StarPerf. These tools cover different parts of an OEC system; they are not interchangeable. [Sections 3-6](../pdfs/survey-orbital-edge-computing.pdf#page=9){target="_blank" rel="noopener noreferrer"}.
 
 ## Findings and research gaps
 
-This is a review, so it has no single proposed algorithm with a controlled benchmark result. A useful methodological finding is that the same algorithm may behave very differently under different constellation configurations. The authors identify limited public telemetry and incomplete end-to-end OEC testbeds as barriers to credible evaluation. [Section 5](../pdfs/survey-orbital-edge-computing.pdf#page=16).
+This is a review, so it has no single proposed algorithm with a controlled benchmark result. A useful methodological finding is that the same algorithm may behave very differently under different constellation configurations. The authors identify limited public telemetry and incomplete end-to-end OEC testbeds as barriers to credible evaluation. [Section 5](../pdfs/survey-orbital-edge-computing.pdf#page=16){target="_blank" rel="noopener noreferrer"}.
 
-Open problems include mobility-aware resource optimization, resilient execution under failures, computing hardware design, caching, virtualization, containers and microservices, network slicing, and federated learning under varying data quality. [Section 7](../pdfs/survey-orbital-edge-computing.pdf#page=23).
+Open problems include mobility-aware resource optimization, resilient execution under failures, computing hardware design, caching, virtualization, containers and microservices, network slicing, and federated learning under varying data quality. [Section 7](../pdfs/survey-orbital-edge-computing.pdf#page=23){target="_blank" rel="noopener noreferrer"}.
 
 ## Limitations and reading cautions
 

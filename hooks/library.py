@@ -21,8 +21,24 @@ def catalog(docs_dir):
             raise ValueError(f'{path.name}: tags must be a list of strings')
         data['tags'] = tags
         data['url'] = 'papers/' + path.with_suffix('.html').name
+        data['source'] = 'papers/' + path.name
         result.append(data)
     return sorted(result, key=lambda p: p['title'].casefold())
+
+
+def on_files(files, config):
+    """Use the catalog's title order for navigation on every build."""
+    papers = catalog(config['docs_dir'])
+    config['nav'] = [{'Paper Library': 'index.md'}]
+    if papers:
+        config['nav'].append({'Papers': [{p['title']: p['source']} for p in papers]})
+    included = {'index.md', *(p['source'] for p in papers)}
+    # Retain any additional documentation pages added outside the paper folder.
+    config['nav'].extend(
+        f.src_uri for f in files.documentation_pages()
+        if f.src_uri not in included and f.inclusion.is_in_nav()
+    )
+    return files
 
 def on_page_markdown(markdown, page, config, files):
     if page.file.src_uri != 'index.md':
